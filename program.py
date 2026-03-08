@@ -190,3 +190,14 @@ ax.set_ylabel("Y") # Label for the y-axis
 ax.set_zlabel("Z") # Label for the z-axis
 plt.savefig("Surface_Plot.png")
 plt.show()
+
+# Wireframe Plot:
+fig = plt.figure() # Create a new figure for the wireframe plot
+ax = fig.add_subplot(111, projection='3d') # Add a 3D subplot to the figure
+ax.plot_wireframe(x, y, z, cmap='viridis') # Create a wireframe plot with a color map
+ax.set_title("Wireframe Plot") # Title for the wireframe plot
+ax.set_xlabel("X") # Label for the x-axis
+ax.set_ylabel("Y") # Label for the y-axis
+ax.set_zlabel("Z") # Label for the z-axis
+plt.savefig("Wireframe_Plot.png")
+plt.show()
